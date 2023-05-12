@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  </head>
+  <body>
+    <nav>
+      <div id="logo"><img src="/images/logo.svg" alt="logo"></div>
+      <div id="navBar">
+        <ul>
+          <li><a href="#" class="arrow-down">Features <img
+                src="/images/icon-arrow-down.svg"
+                alt="arrow">
+            </a>
+            <ul id="sub-menu-features" class="hide sub-menu-features">
+              <div class="subs-features">
+                <img src="/images/icon-todo.svg" alt="image">
+                <li>Todo List</li>
+              </div>
+              <div class="subs-features">
+                <img src="/images/icon-calendar.svg" alt="image">
+                <li>Calendar</li>
+              </div>
+              <div class="subs-features">
+                <img src="/images/icon-reminders.svg" alt="image">
+                <li>Reminders</li>
+              </div>
+              <div class="subs-features">
+
+                <img src="/images/icon-planning.svg" alt="image">
+                <li>Planning</li>
+              </div>
+            </ul>
+
+          </li>
+          <li><a href="" class="arrow-down">Company <img
+                src="/images/icon-arrow-down.svg"
+                alt="arrow">
+            </a>
+
+            <ul id="sub-menu-company" class="hide sub-menu-company">
+              <div class="subs-company">
+                <li>History</li>
+              </div>
+              <div class="subs-company">
+
+                <li>Our Team</li>
+              </div>
+              <div class="subs-company">
+                <li>Blog</li>
+              </div>
+            </ul>
+          </li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </div>
+      <div id="user">
+        <li><a href="">Login</a></li>
+        <li><a href="">Register</a></li>
+      </div>
+      <div><img src="/images/icon-menu.svg" id="menu-hamburger"
+          onclick="openMenu()"
+          alt="logo"></div>
+      <div class="menu-mobile hide">
+        <section id="menu-hidden">
+          <div id="navBar-mobile" class="menu-mobile">
+            <ul>
+              <div id="btn-close"><img src="/images/icon-close-menu.svg"
+                  onclick="closeMenu()"
+                  alt="img"></div>
+              <li><a href="#" class="arrow-down">Features <img
+                    src="/images/icon-arrow-down.svg"
+                    alt="arrow">
+                </a>
+                <ul id="sub-menu-features-hidden" class="hide
+                  sub-menu-features-hidden">
+                  <div class="subs-features">
+                    <img src="/images/icon-todo.svg" alt="image">
+                    <li>Todo List</li>
+                  </div>
+                  <div class="subs-features">
+                    <img src="/images/icon-calendar.svg" alt="image">
+                    <li>Calendar</li>
+                  </div>
+                  <div class="subs-features">
+                    <img src="/images/icon-reminders.svg" alt="image">
+                    <li>Reminders</li>
+                  </div>
+                  <div class="subs-features">
+
+                    <img src="/images/icon-planning.svg" alt="image">
+                    <li>Planning</li>
+                  </div>
+                </ul>
+
+              </li>
+              <li><a href="" class="arrow-down">Company <img
+                    src="/images/icon-arrow-down.svg"
+                    alt="arrow">
+                </a>
+
+                <ul id="sub-menu-company-hidden" class="hide sub-menu-company">
+                  <div class="subs-company">
+                    <li>History</li>
+                  </div>
+                  <div class="subs-company">
+
+                    <li>Our Team</li>
+                  </div>
+                  <div class="subs-company">
+                    <li>Blog</li>
+                  </div>
+                </ul>
+              </li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">About</a></li>
+            </ul>
+          </div>
+          <div id="user-hidden">
+            <li><a href="">Login</a></li>
+            <li><a href="">Register</a></li>
+          </div>
+
+
+        </section>
+      </div>
+    </nav>
+
+
+
+
+    <main>
+      <div id="container">
+        <section id="hero-mobile">
+
+        </section>
+        <section id="make-remote">
+          <div>
+            <h1> Make remote work
+            </h1>
+            <div id="make-text">
+              Get your team in sync, no matter your location. Streamline
+              processes,
+              create team rituals, and watch productivity soar.
+            </div>
+            <button id="make-btn"> Learn more</button>
+          </div>
+          <div id="make-client">
+            <img src="/images/client-databiz.svg" alt="image">
+            <img src="/images/client-audiophile.svg" alt="image">
+            <img src="/images/client-meet.svg" alt="image">
+            <img src="/images/client-maker.svg" alt="image">
+          </div>
+        </section>
+        <section id="hero-desktop">
+
+        </section>
+      </div>
+    </main>
+
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Agnès Cloud</a>.
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
